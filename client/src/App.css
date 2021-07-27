@@ -1,0 +1,77 @@
+.App {
+  text-align: center;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Kumbh Sans", serif;
+  background-color: #000;
+}
+html,
+body {
+  height: 100%;
+}
+.topbar {
+  color: #fff;
+  height: 5rem;
+  background-color: #5e1949;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topbar-afterClick {
+  color: #fff;
+  height: 5rem;
+  background-color: #5e1949;
+}
+.input-search {
+  height: 50px;
+  width: 70%;
+  margin: 15px;
+  background-color: transparent;
+  float: left;
+  outline: none;
+  border: none;
+  font-size: 25px;
+  color: #fff;
+}
+
+.search-icon {
+  padding: 20px;
+  float: right;
+}
+.add-word-input {
+  margin-left: 20px;
+  height: 35px;
+  width: 80%;
+  outline: none;
+  border-width: 0 0 2px;
+  border-color: #5e1949;
+  font-size: 15px;
+}
+.add-word-input:focus:active {
+  border: none;
+}
+.btn-popup {
+  position: absolute;
+  color: #5e1949;
+  font-weight: bold;
+  cursor: pointer;
+}
+.detail-view {
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  top: 0;
+  left: 0;
+  min-height: 100vh;
+}
+.backg {
+  height: 100vh;
+  display: visible;
+  background-image: linear-gradient(#000 10%, #fff 90%);
+}

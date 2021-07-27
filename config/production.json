@@ -1,0 +1,5 @@
+{
+  "mongoURI": "mongodb+srv://aryancsz:aryan777@cluster0.mjhxc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+  "app_id": "8e678b6b",
+  "app_key": "b64226fc60a692f28111a2614c6d73fc"
+}
