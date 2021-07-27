@@ -6,6 +6,7 @@ const Footer = () => {
       style={{
         background: "white",
         position: "fixed",
+        width: "100%",
         bottom: "0",
       }}
     >
