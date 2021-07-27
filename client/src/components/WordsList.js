@@ -432,6 +432,8 @@ const WordsList = ({ searchFromdb }) => {
           style={{
             position: "absolute",
             zIndex: "1",
+            width: "100%",
+            height: "100%",
             backgroundColor: "rgba(255, 255, 255, 0.3)",
             backdropFilter: "blur(1.5px)",
             top: 0,
