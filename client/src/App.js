@@ -12,7 +12,10 @@ function App() {
     <div>
       <Provider store={store}>
         <SearchBar setSearchFromdb={setSearchFromdb} />
-        <WordsList searchFromdb={searchFromdb} />
+        <WordsList
+          searchFromdb={searchFromdb}
+          setSearchFromdb={setSearchFromdb}
+        />
       </Provider>
       <Footer />
     </div>

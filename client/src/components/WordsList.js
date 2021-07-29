@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 import CloseIcon from "@material-ui/icons/Close";
 import axios from "axios";
 
-const WordsList = ({ searchFromdb }) => {
+const WordsList = ({ searchFromdb, setSearchFromdb }) => {
   const dispatch = useDispatch();
   const [popup, setPopup] = useState(false);
   const [detailViewToggle, setDetailViewToggle] = useState(false);
@@ -282,15 +282,15 @@ const WordsList = ({ searchFromdb }) => {
     }
     // bellow value set tp empty string to clear the old input
     setWordVal("");
+    setSearchFromdb("");
   };
 
   const addNewWord = (e) => {
     addNewWordClicked();
 
     //  SEARCHING FOR NEW WORD TO ADD
-
     // If word is Already present in database and rendered dont add the word again
-    if (dupicateCheck.includes(wordVal)) {
+    if (dupicateCheck.includes(wordVal.trim())) {
       setAlert({ state: "Word already exist in database" });
       setTimeout(() => {
         setAlert({ state: "" });
